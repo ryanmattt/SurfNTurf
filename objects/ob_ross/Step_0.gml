@@ -33,4 +33,7 @@ else if(_down)
 else	
 	sprite_index = sp_forward_ross;
 	
+//code to stop ross from going into the water and leaving the beach
+x=clamp(x,0,room_width);
+y=clamp(y,420,570);
 	
