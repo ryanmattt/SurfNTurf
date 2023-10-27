@@ -19,6 +19,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"sp_right_ross","order":4,"path":"sprites/sp_right_ross/sp_right_ross.yy",},
+    {"name":"sp_surfross","order":11,"path":"sprites/sp_surfross/sp_surfross.yy",},
     {"name":"sp_housedialogue","order":9,"path":"sprites/sp_housedialogue/sp_housedialogue.yy",},
     {"name":"ob_surfboard","order":3,"path":"objects/ob_surfboard/ob_surfboard.yy",},
     {"name":"ob_emptydialogue","order":2,"path":"objects/ob_emptydialogue/ob_emptydialogue.yy",},
