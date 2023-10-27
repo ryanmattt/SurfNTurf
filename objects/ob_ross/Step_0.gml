@@ -17,22 +17,28 @@ if (_hspd != 0 || _vspd != 0)
     y = y + _yadd;
 }
 
+x=clamp(x,0,room_width);
 //Code to change animation based on what keys are being pressed
-if(_up)
-	sprite_index = sp_back_ross;	
+if(!riding_surfboard) {
+	if(_up)
+		sprite_index = sp_back_ross;	
 	
-else if(_left)
-	sprite_index = sp_left_ross;
+	else if(_left)
+		sprite_index = sp_left_ross;
 
-else if(_right)
-	sprite_index = sp_right_ross;
+	else if(_right)
+		sprite_index = sp_right_ross;
 	
-else if(_down)
-	sprite_index = sp_forward_ross;
+	else if(_down)
+		sprite_index = sp_forward_ross;
 
 	
 //code to stop ross from going into the water and leaving the beach
-
-x=clamp(x,0,room_width);
 y=clamp(y,420,570);
-	
+}
+else
+{
+
+
+y=clamp(y,570,room_height);
+}

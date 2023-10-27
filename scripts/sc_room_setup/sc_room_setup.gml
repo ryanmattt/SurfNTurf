@@ -1,4 +1,4 @@
-var _check = true;
+/*var _check = true;
 var _rm = room_next(room);
 var  _rprev = _rm;
 
@@ -19,4 +19,4 @@ while (_check = true)
         _rprev = _rm;
         _rm = room_next(_rprev);
         }
-    }
+    }*/

@@ -37,6 +37,7 @@
   "resources": [
     {"id":{"name":"create_dialoguebox","path":"scripts/create_dialoguebox/create_dialoguebox.yy",},},
     {"id":{"name":"sp_right_ross","path":"sprites/sp_right_ross/sp_right_ross.yy",},},
+    {"id":{"name":"sp_surfross","path":"sprites/sp_surfross/sp_surfross.yy",},},
     {"id":{"name":"sp_housedialogue","path":"sprites/sp_housedialogue/sp_housedialogue.yy",},},
     {"id":{"name":"ob_surfboard","path":"objects/ob_surfboard/ob_surfboard.yy",},},
     {"id":{"name":"ob_emptydialogue","path":"objects/ob_emptydialogue/ob_emptydialogue.yy",},},
