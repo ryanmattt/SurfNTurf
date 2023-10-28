@@ -32,7 +32,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.800.0.406",
+    "IDEVersion": "2023.1100.0.425",
   },
   "resources": [
     {"id":{"name":"create_dialoguebox","path":"scripts/create_dialoguebox/create_dialoguebox.yy",},},
