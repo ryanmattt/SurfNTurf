@@ -5,11 +5,10 @@ var _down = keyboard_check(ord("S"));
 var _hspd = _right - _left;
 var _vspd = _down - _up;
 
-
 //Code determine speed in all 8 directions
 if (_hspd != 0 || _vspd != 0)
 {
-    var _spd = 4;
+   
     var _dir = point_direction(0, 0, _hspd, _vspd);
     var _xadd = lengthdir_x(_spd, _dir);
     var _yadd = lengthdir_y(_spd, _dir);
@@ -38,6 +37,19 @@ y=clamp(y,420,570);
 }
 else
 {
+if(y<=590)
+{
+	riding_surfboard= false;
+	sprite_index=sp_back_ross;
+	_surfboard.x = x;
+	_surfboard.y = y+40;
+	_surfboard._key.x = x;
+	_surfboard._key.y = _surfboard.y-100;
+	_surfboard.visible = true;
+	y = y-20;
+	_spd = 4;
+	
+}
 
 
 y=clamp(y,570,room_height);

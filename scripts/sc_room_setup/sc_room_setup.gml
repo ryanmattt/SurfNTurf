@@ -1,3 +1,5 @@
+
+//Set screen to match any bounds WIP
 /*var _check = true;
 var _rm = room_next(room);
 var  _rprev = _rm;
