@@ -59,6 +59,7 @@
     {"id":{"name":"Background","path":"sprites/Background/Background.yy",},},
     {"id":{"name":"ob_ross","path":"objects/ob_ross/ob_ross.yy",},},
     {"id":{"name":"sp_forward_ross","path":"sprites/sp_forward_ross/sp_forward_ross.yy",},},
+    {"id":{"name":"ob_underwaterross","path":"objects/ob_underwaterross/ob_underwaterross.yy",},},
     {"id":{"name":"rm_beach","path":"rooms/rm_beach/rm_beach.yy",},},
   ],
   "RoomOrderNodes": [

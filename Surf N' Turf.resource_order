@@ -38,5 +38,6 @@
     {"name":"sp_testlove","order":2,"path":"sprites/sp_testlove/sp_testlove.yy",},
     {"name":"ob_ross","order":1,"path":"objects/ob_ross/ob_ross.yy",},
     {"name":"sp_forward_ross","order":1,"path":"sprites/sp_forward_ross/sp_forward_ross.yy",},
+    {"name":"ob_underwaterross","order":6,"path":"objects/ob_underwaterross/ob_underwaterross.yy",},
   ],
 }
