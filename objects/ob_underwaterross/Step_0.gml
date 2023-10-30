@@ -2,20 +2,19 @@ var _left = keyboard_check(ord("A"));
 var _right = keyboard_check(ord("D"));
 var _up = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_space);
 var _down = keyboard_check(ord("S"));
-var _mod = .8;
-var _hspd = _right - _left;
-var _vspd = _down - (_up * 2);
-var _spd = 4;
-fric_water = 0.1;
-gravity = .05;
+move = _right - _left;
+_hspd = move * _spd;
 
-	  
-if((!keyboard_check(vk_left) && !keyboard_check(vk_right))){_hspd -= fric_water * sign(_hspd);}
-var _dir = point_direction(0, 0, _hspd, _vspd);
-var _xadd = lengthdir_x(_spd, _dir);
-var _yadd = lengthdir_y(_spd, _dir);
-x = x + _xadd;
-y = y + _yadd;
+if(keyboard_check(vk_space) || keyboard_check(ord("W"))) _vspd = lerp(_vspd, -3, .4);
+
+else if(keyboard_check(ord("S")) || keyboard_check(vk_lcontrol)) _vspd = lerp(_vspd, 5, .4);
+
+if((!keyboard_check(vk_left) && !keyboard_check(vk_right))) _hspd -= _waterfric * sign(_hspd);
+
+x += _hspd;
+y += _vspd;
+_vspd = lerp(_vspd, 1, _grv);
+
 
 
 
