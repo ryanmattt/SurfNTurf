@@ -37,6 +37,9 @@ y=clamp(y,420,570);
 }
 else
 {
+	
+//detecting when the player crosses the beach 
+//and turns them back to ross then replaces the surfboard
 if(y<=590)
 {
 	riding_surfboard= false;
@@ -49,6 +52,11 @@ if(y<=590)
 	y = y-20;
 	_spd = 4;
 	
+}
+
+else if(y>room_height-10)
+{
+	room_goto(rm_underwater);
 }
 
 
