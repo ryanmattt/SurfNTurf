@@ -1,0 +1,11 @@
+draw_set_font(fn_arial);
+text = "...";
+page = 0;
+xBuffer = 10;
+yBuffer = 10;
+boxHeight = sprite_get_height(sp_textbox);
+boxWidth = sprite_get_width(sp_textbox);
+stringHeight = string_height(text);
+creator = noone;
+charCount = 0;
+name = noone;
