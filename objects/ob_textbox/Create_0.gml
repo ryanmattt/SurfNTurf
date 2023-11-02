@@ -1,11 +1,11 @@
-draw_set_font(fn_dialogue);
+draw_set_font(fnt_dialogue);
 text = "...";
-page = 0;
 xBuffer = 10;
 yBuffer = 10;
-boxHeight = sprite_get_height(sp_textbox);
-boxWidth = sprite_get_width(sp_textbox);
+boxHeight = camera_get_view_height(view_camera[0]);
+boxWidth = camera_get_view_width(view_camera[0]);
 stringHeight = string_height(text);
 creator = noone;
 charCount = 0;
 name = noone;
+_pagecomplete = false;
