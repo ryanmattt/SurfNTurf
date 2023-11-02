@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "ob_tanner",
+  "name": "ob_ursiline",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": true,
   "spriteId": {
-    "name": "sp_tanner",
-    "path": "sprites/sp_tanner/sp_tanner.yy",
+    "name": "sp_ursiline",
+    "path": "sprites/sp_ursiline/sp_ursiline.yy",
   },
   "spriteMaskId": null,
   "visible": true,

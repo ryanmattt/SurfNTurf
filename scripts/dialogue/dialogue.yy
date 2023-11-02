@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "create_dialoguebox",
+  "name": "dialogue",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
