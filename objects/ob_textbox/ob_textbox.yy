@@ -29,7 +29,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sp_textbox",
+    "path": "sprites/sp_textbox/sp_textbox.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

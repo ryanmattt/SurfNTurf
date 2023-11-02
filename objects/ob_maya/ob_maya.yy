@@ -29,8 +29,8 @@
   "properties": [],
   "solid": true,
   "spriteId": {
-    "name": "sp_tanner",
-    "path": "sprites/sp_tanner/sp_tanner.yy",
+    "name": "sp_maya",
+    "path": "sprites/sp_maya/sp_maya.yy",
   },
   "spriteMaskId": null,
   "visible": true,
