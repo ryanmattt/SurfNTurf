@@ -1,4 +1,4 @@
-draw_set_font(fn_arial);
+draw_set_font(fn_dialogue);
 text = "...";
 page = 0;
 xBuffer = 10;

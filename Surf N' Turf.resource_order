@@ -37,7 +37,6 @@
     {"name":"rm_underwater","order":4,"path":"rooms/rm_underwater/rm_underwater.yy",},
     {"name":"rm_start","order":1,"path":"rooms/rm_start/rm_start.yy",},
     {"name":"ob_roomsetup","order":5,"path":"objects/ob_roomsetup/ob_roomsetup.yy",},
-    {"name":"sp_testlove","order":2,"path":"sprites/sp_testlove/sp_testlove.yy",},
     {"name":"ob_textbox","order":7,"path":"objects/ob_textbox/ob_textbox.yy",},
     {"name":"ob_ross","order":1,"path":"objects/ob_ross/ob_ross.yy",},
     {"name":"sp_forward_ross","order":1,"path":"sprites/sp_forward_ross/sp_forward_ross.yy",},
