@@ -15,25 +15,11 @@ textArray = [];
 _optionselected = 0;
 _player.dialogue_open = true;
 _display_sprite = sp_ross_closeup;
+_first_run=true;
 
 
-function _cleanup () {
-	if(node.dtype) {
-		_player._ego += node.modify_mood[_optionselected];
-		node.modify_mood[_optionselected]=0;
-		node=node.next[_optionselected];
-	} else
-		node=node.next;
-	
-	_nodeComplete = true;
-	charCount = 0;
-	name = node.talking;
-	if(node.dtype) 
-		textArray=node.text;
-
-
-
-	//Switch character
+function _updateChar () {
+//Switch character
 	switch name {
 
 	case "Ross":
@@ -61,6 +47,26 @@ function _cleanup () {
         break;
 
 	
+	}
 }
+
+
+function _cleanup () {
+	if(node.dtype) {
+		_player._ego += node.modify_mood[_optionselected];
+		node.modify_mood[_optionselected]=0;
+		node=node.next[_optionselected];
+	} else
+		node=node.next;
+	
+	_nodeComplete = false;
+	charCount = 0;
+	name = node.talking;
+	_updateChar();
+	if(node.dtype) 
+		textArray=node.text;
+	
+
+
 
 }

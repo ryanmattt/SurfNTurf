@@ -1,7 +1,12 @@
 /// @description Draws the textbox and text
 
+if(_first_run)
+{
+	_updateChar();
+	_first_run=false;
+}
 
-draw_sprite_stretched(_display_sprite,0,x+boxWidth/2,y-boxHeight,boxHeight*1.4*1.5,boxHeight*1.5);
+draw_sprite_stretched(_display_sprite,0,x+boxWidth*3/10,y-boxHeight,boxHeight*1.4,boxHeight);
 
 
 //draw text box and its border
