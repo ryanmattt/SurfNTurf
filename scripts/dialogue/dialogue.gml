@@ -10,26 +10,29 @@ _player = instance_find(ob_ross,0);
 
 
 function create_tanner_dialogue(_self) {
-var _textbox = instance_create_layer(0,camera_get_view_height(view_camera[0]),"Text",ob_textbox);
-_textbox.name = "Test";
-
-
-
-
-}
-
-function create_coral_dialogue() {
+var _textbox = instance_create_layer(0,camera_get_view_height(view_camera[0])*2/3,"Text",ob_textbox);
+_textbox.name = "Tanner";
+_textbox.currNode = _self.td01start;
+return _textbox;
 
 }
 
-function create_maya_dialogue() {
 
-}
+function CreateNode(_text, _next=noone, _dtype=0, _modify_mood=[0,0],_talking="Ross") constructor
+{
+    text = _text;
+	next = _next;
+	dtype = _dtype;
+	modify_mood = _modify_mood;
+	talking = _talking;
 
-function create_steve_dialogue() {
+    static node = function(_new_node)
+    {
+		text += _new_node.text;
+		next += _new_node.next;
+		dtype += _new_node.dtype;
+		modify_mood += _new_node.modify_mood;
+		talking += _new_node.talking;
+    }
+} 
 
-}
-
-function create_ursiline_dialogue() {
-
-}
