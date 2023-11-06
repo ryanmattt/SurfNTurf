@@ -7,6 +7,7 @@ if(_first_run)
 }
 
 draw_sprite_stretched(_display_sprite,0,x+boxWidth*3/10,y-boxHeight,boxHeight*1.4,boxHeight);
+draw_sprite_stretched(sp_ross_closeup,0,x+boxWidth*1/10,y,boxHeight-yBuffer,boxHeight/1.4);
 
 
 //draw text box and its border
@@ -37,7 +38,7 @@ var _draw_options = function(_element, _index){
 	        textArray[_index] = string_copy(_element, 1, charCount);
 		}
 	
-		draw_text_ext(x + xBuffer + 40, y + stringHeight*(_index+1) + yBuffer, textArray[_index], stringHeight, boxWidth - (2 * xBuffer));
+		draw_text_ext(x + xBuffer + 40, y + _choiceDistance*(_index+1) + yBuffer, textArray[_index], stringHeight, boxWidth - (2 * xBuffer));
 		
 }
 
@@ -62,7 +63,7 @@ if(node!=noone) {
 		array_foreach(node.text, _draw_options);
 		
 
-		draw_sprite(sp_selectarrow, 0, x + xBuffer, y + ((_optionselected+1) * stringHeight));
+		draw_sprite(sp_selectarrow, 0, x + xBuffer, y + ((_optionselected+1) * _choiceDistance));
 		
 
 	}

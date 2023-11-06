@@ -18,7 +18,7 @@ return _textbox;
 }
 
 
-function CreateNode(_text, _next=noone, _dtype=0, _modify_mood=[0,0],_talking="Ross") constructor
+function CreateNode(_text, _next=noone, _dtype=0, _modify_mood=[0,0], _talking="Ross") constructor
 {
     text = _text;
 	next = _next;
@@ -32,7 +32,7 @@ function CreateNode(_text, _next=noone, _dtype=0, _modify_mood=[0,0],_talking="R
 		next += _new_node.next;
 		dtype += _new_node.dtype;
 		modify_mood += _new_node.modify_mood;
-		talking += _new_node.talking;	
-    }
+		talking += _new_node.talking;
+	}
 } 
 

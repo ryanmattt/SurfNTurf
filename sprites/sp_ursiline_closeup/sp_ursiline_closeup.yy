@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d1ba45e1-f59e-4a16-b1eb-d5abd3132759","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 6,
   "parent": {
     "name": "closeups",
     "path": "folders/Sprites/closeups.yy",
@@ -59,7 +59,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 1194,
+    "xorigin": 0,
     "yorigin": 1668,
   },
   "swatchColours": null,
