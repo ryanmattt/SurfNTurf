@@ -6,7 +6,7 @@ boxHeight = camera_get_view_height(view_camera[0]/4);
 boxWidth = camera_get_view_width(view_camera[0]);
 stringHeight = string_height(text);
 charCount = 0;
-name = noone;
+name = "";
 _nodeComplete = false;
 node = noone;
 _player = instance_find(ob_ross,0);
@@ -16,6 +16,7 @@ _optionselected = 0;
 _player.dialogue_open = true;
 _display_sprite = sp_ross_closeup;
 _first_run=true;
+_choiceDistance = stringHeight*2;
 
 
 function _updateChar () {
@@ -59,10 +60,10 @@ function _cleanup () {
 	} else
 		node=node.next;
 	
+	_optionselected = 0;
 	_nodeComplete = false;
 	charCount = 0;
 	name = node.talking;
-	_updateChar();
 	if(node.dtype) 
 		textArray=node.text;
 	
