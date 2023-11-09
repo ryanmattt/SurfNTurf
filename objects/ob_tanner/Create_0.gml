@@ -1,5 +1,6 @@
 _key=instance_create_layer(x,y-80, "Keys", ob_interact_key);
 _start_dialogue = false;
+_interacted = false;
 _textbox = noone;
 /*
 01. Sick necklace bro, where'd you get it?
@@ -26,7 +27,7 @@ _textbox = noone;
 04. Imma dip. Keep the rubber side down.
 */
 //Format: tanner dialogue (td) + sequence num (00) + child (| childletter_childletter) ...
-//CreateNode(text, next (node | [node,node...]), dtype (1 = player, 0 = tanner), mood modifer (0 | [int,int...]))
+//CreateNode(text, next (node | [node,node...]), dtype (1 = player, 0 = tanner), mood modifer (0 | [int,int...], name))
 td01start = new CreateNode("Sick necklace bro, where'd you get it?",,,,"Tanner");
 td01a_b = new CreateNode(["It was my mom's... she's actually dead and today's a really rough day","What's it to you? Are you trying to rob me? "],,1,[0,1]);
 td01start.next = td01a_b;

@@ -21,6 +21,7 @@ if(!dialogue_open) {
 	}
 
 	x=clamp(x,0,room_width);
+	
 	//Code to change animation based on what keys are being pressed
 	if(!riding_surfboard) {
 		if(_up)
@@ -59,7 +60,7 @@ if(!dialogue_open) {
 	}
 
 	else if(y>room_height-10) {
-		room_goto(rm_underwater);
+		room_goto(rm_minigame);
 	}
 
 		y=clamp(y,570,room_height);
