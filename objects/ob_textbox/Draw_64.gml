@@ -38,7 +38,7 @@ var _draw_options = function(_element, _index){
 	        textArray[_index] = string_copy(_element, 1, charCount);
 		}
 	
-		draw_text_ext(x + xBuffer + 40, y + _choiceDistance*(_index+1) + yBuffer, textArray[_index], stringHeight, boxWidth - (2 * xBuffer));
+		draw_text_ext(x + (5 * xBuffer), y + _choiceDistance*(_index+1) + yBuffer, textArray[_index], stringHeight, boxWidth - (5 * xBuffer));
 		
 }
 
@@ -57,7 +57,7 @@ if(node!=noone) {
 		_nodeComplete = true;
 		}
 	
-		draw_text_ext(x + xBuffer, y + stringHeight + yBuffer, textPart, stringHeight, boxWidth - (2 * xBuffer));
+		draw_text_ext(x + (2*xBuffer), y + stringHeight + yBuffer, textPart, stringHeight, boxWidth - (3 * xBuffer));
 	} //Selectable
 	else {
 		array_foreach(node.text, _draw_options);
