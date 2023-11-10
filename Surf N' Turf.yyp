@@ -100,7 +100,6 @@
     {"id":{"name":"sp_coral_closeup","path":"sprites/sp_coral_closeup/sp_coral_closeup.yy",},},
     {"id":{"name":"sp_tanner_closeup","path":"sprites/sp_tanner_closeup/sp_tanner_closeup.yy",},},
     {"id":{"name":"sp_ursiline_closeup","path":"sprites/sp_ursiline_closeup/sp_ursiline_closeup.yy",},},
-    {"id":{"name":"Sprite13","path":"sprites/Sprite13/Sprite13.yy",},},
     {"id":{"name":"sp_ross_closeup","path":"sprites/sp_ross_closeup/sp_ross_closeup.yy",},},
     {"id":{"name":"Approach","path":"scripts/Approach/Approach.yy",},},
     {"id":{"name":"ob_underwaterross","path":"objects/ob_underwaterross/ob_underwaterross.yy",},},

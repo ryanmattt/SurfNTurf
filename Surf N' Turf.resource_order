@@ -71,7 +71,6 @@
     {"name":"sp_maya_closeup","order":1,"path":"sprites/sp_maya_closeup/sp_maya_closeup.yy",},
     {"name":"sp_tanner_closeup","order":4,"path":"sprites/sp_tanner_closeup/sp_tanner_closeup.yy",},
     {"name":"sp_ursiline_closeup","order":5,"path":"sprites/sp_ursiline_closeup/sp_ursiline_closeup.yy",},
-    {"name":"Sprite13","order":16,"path":"sprites/Sprite13/Sprite13.yy",},
     {"name":"sp_ross_closeup","order":2,"path":"sprites/sp_ross_closeup/sp_ross_closeup.yy",},
     {"name":"Approach","order":2,"path":"scripts/Approach/Approach.yy",},
     {"name":"ob_underwaterross","order":6,"path":"objects/ob_underwaterross/ob_underwaterross.yy",},
