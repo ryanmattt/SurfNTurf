@@ -59,6 +59,10 @@ function _cleanup () {
 		node=node.next[_optionselected];
 	} else
 		node=node.next;
+		
+	if(node.give_necklace) 
+		_player.has_necklace=true;
+		
 	
 	_optionselected = 0;
 	_nodeComplete = false;

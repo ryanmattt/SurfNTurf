@@ -18,7 +18,7 @@ return _textbox;
 }
 
 
-function CreateNode(_text, _next=noone, _dtype=0, _modify_mood=[0,0], _talking="Ross", _color="c_white") constructor
+function CreateNode(_text, _next=noone, _dtype=0, _modify_mood=[0,0], _talking="Ross", _color=c_white,_give_necklace=false) constructor
 {
     text = _text;
 	next = _next;
@@ -26,6 +26,7 @@ function CreateNode(_text, _next=noone, _dtype=0, _modify_mood=[0,0], _talking="
 	modify_mood = _modify_mood;
 	talking = _talking;
 	color = _color;
+	give_necklace = _give_necklace;
 
     static node = function(_new_node)
     {
@@ -35,6 +36,7 @@ function CreateNode(_text, _next=noone, _dtype=0, _modify_mood=[0,0], _talking="
 		modify_mood += _new_node.modify_mood;
 		talking += _new_node.talking;
 		color += _new_node.color;
+		give_necklace += _new_node.give_necklace;
 
 	}
 } 

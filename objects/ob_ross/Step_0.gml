@@ -41,39 +41,42 @@ if(room_get_name(room)=="rm_beach") {
 		//code to stop ross from going into the water and leaving the beach
 		y=clamp(y,420,570);
 		}
-		else
-		{
+		else {
+				//detecting when the player crosses the beach 
+			//and turns them back to ross then replaces the surfboard
+			if(y<=590)
+			{
+				riding_surfboard= false;
+				sprite_index=sp_back_ross;
+				_surfboard.x = x;
+				_surfboard.y = y+40;
+				_surfboard._key.x = x;
+				_surfboard._key.y = _surfboard.y-100;
+				_surfboard.sprite_index=sp_surfboard;
+				_surfboard.visible = true;
+				y = y-20;
+				_spd = 4;
+				y=clamp(y,570,room_height);
 	
-		//detecting when the player crosses the beach 
-		//and turns them back to ross then replaces the surfboard
-		if(y<=590)
-		{
-			riding_surfboard= false;
-			sprite_index=sp_back_ross;
-			_surfboard.x = x;
-			_surfboard.y = y+40;
-			_surfboard._key.x = x;
-			_surfboard._key.y = _surfboard.y-100;
-			_surfboard.visible = true;
-			y = y-20;
-			_spd = 4;
-	
-		}
-			//Swaps to the minigame and sets values
-		else if(y>room_height-10) {
-			image_xscale=5;
-			image_yscale=5;
-			friction = .5;
-			room_goto(rm_minigame);
-			x=room_width/2;
-			y = 100;
-		}
+			}
+				//Swaps to the minigame and sets values
+			else if(y>room_height-10) {
+				image_xscale=5;
+				image_yscale=5;
+				friction = .5;
+				room_goto(rm_minigame);
+				draw_set_font(fnt_dialogue);
+				x = room_width/2;
+				y = 100;
+			
+			}
 
-			y=clamp(y,570,room_height);
+			
 		}
-	}
+	} 
 } //Minigame movement 
 else if (room_get_name(room) == "rm_minigame") {
+	score = y;
 	vspeed = 7;
 	var _left = keyboard_check(ord("A"));
 	var _right = keyboard_check(ord("D"));
@@ -81,7 +84,7 @@ else if (room_get_name(room) == "rm_minigame") {
 	
 	if(hspeed<0)
 		image_xscale=-1* abs(image_xscale);
-	else
+	else if(hspeed>0)
 		image_xscale=abs(image_xscale);
 
 	x = clamp(x, 32, room_width-32);

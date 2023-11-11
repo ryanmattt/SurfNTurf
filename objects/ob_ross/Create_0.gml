@@ -2,6 +2,7 @@
 riding_surfboard = false;
 dialogue_open = false;
 _ego = 0;
+_highscore=0;
 
 //inventory
 has_necklace = false;
