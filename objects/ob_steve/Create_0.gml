@@ -1,4 +1,4 @@
-_key=instance_create_layer(x,y-08, "Keys", ob_interact_key);
+_key=instance_create_layer(x,y-80, "Keys", ob_interact_key);
 _start_dialogue = false;
 _interacted = false;
 _textbox = noone;
@@ -24,8 +24,8 @@ _textbox = noone;
 sd01start = new CreateNode("Happy 18th Birthday son!",,,,"Steve");
 sd01a_b = new CreateNode(["Thanks dad!", "Come on dad, let me sleep in."],,1);
 sd01start.next=sd01a_b;
-sd01aa = new CreateNode("I have a gift for you.",,,,"Steve");
-sd01ba = new CreateNode("Aw, don't be like that. Here, I've got something for you.",,,,"Steve");
+sd01aa = new CreateNode("I have a gift for you.",,,,"Steve",,true);
+sd01ba = new CreateNode("Aw, don't be like that. Here, I've got something for you.",,,,"Steve",,true);
 sd01a_b.next=[sd01aa,sd01ba];
 
 sd02start = new CreateNode("I know this is a bittersweet day for you since your mother isn't here... But here is something to remember her by.",,,,"Steve");
