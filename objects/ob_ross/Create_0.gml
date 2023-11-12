@@ -5,7 +5,10 @@ _ego = 0;
 _highscore=0;
 
 //inventory
-has_necklace = false;
+if(room!=rm_housedialogue)
+	has_necklace = true;
+else
+	has_necklace = false;
 
 //movement variables
 _hspd = 0;
@@ -16,4 +19,5 @@ _waterfric = .1;
 
 //surfboard
 _surfboard = instance_find(ob_surfboard,0);
+_dock = instance_find(ob_dock,0);
 

@@ -33,9 +33,16 @@ if (keyboard_check_pressed(vk_space) ||keyboard_check_pressed(vk_enter)) {
 				textPart = node.text;
 			_nodeComplete = true;
 		} else if (node.next==noone) {
-           instance_destroy();
+           _player.dialogue_open = false;
+		   instance_destroy();
+		   if(room==rm_boss)
+			layer_background_change(layer_background_get_id(layer_get_id("Background")), sp_red_underwater);
+		   if(room==rm_housedialogue)
+			room_goto(rm_beach);	
+		   else
 			asset_get_index("ob_" + string_lower(name))._interacted=true;
-		   _player.dialogue_open = false;
+		   
+		   
         } else {
             _cleanup();
         }

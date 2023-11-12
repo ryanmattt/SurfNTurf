@@ -1,4 +1,4 @@
-_key=instance_create_layer(x,y-80, "Keys", ob_interact_key);
+// _key=instance_create_layer(x,y-80, "Keys", ob_interact_key);
 _start_dialogue = false;
 _interacted = false;
 _textbox = noone;
