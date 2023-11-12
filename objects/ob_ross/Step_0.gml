@@ -1,6 +1,7 @@
 //Surface Movement
+if(!dialogue_open) {
 if(room_get_name(room)=="rm_beach") {
-	if(!dialogue_open) {
+	
 		var _left = keyboard_check(ord("A"));
 		var _right = keyboard_check(ord("D"));
 		var _up = keyboard_check(ord("W"));
@@ -21,7 +22,7 @@ if(room_get_name(room)=="rm_beach") {
 		    y = y + _yadd;
 		}
 
-		x=clamp(x,0,room_width);
+		
 	
 		//Code to change animation based on what keys are being pressed
 		if(!riding_surfboard) {
@@ -37,9 +38,21 @@ if(room_get_name(room)=="rm_beach") {
 			else if(_down)
 				sprite_index = sp_forward_ross;
 
+			if(_hspd != 0 || _vspd != 0)
+				image_index += .12;
+			else
+				image_index = 0;
+
 	
 		//code to stop ross from going into the water and leaving the beach
-		y=clamp(y,420,570);
+		if(x<= _dock.x || x>= _dock.x+_dock.sprite_width || y<_dock.y-20) {
+				x=clamp(x,0,room_width);
+				y=clamp(y,420,570);
+		} else {
+				x=clamp(x,_dock.x+25,_dock.x+_dock.sprite_width-25);
+				y=clamp(y,420,570+_dock.sprite_height-60);
+			}	
+			
 		}
 		else {
 				//detecting when the player crosses the beach 
@@ -70,28 +83,32 @@ if(room_get_name(room)=="rm_beach") {
 				y = 100;
 			
 			}
-
-			
+		
+		if(_hspd<0)
+ 			image_xscale=-1* abs(image_xscale);
+ 		else if(_spd>0)
+ 			image_xscale=abs(image_xscale);
 		}
-	} 
+	 
 } //Minigame movement 
-else if (room_get_name(room) == "rm_minigame") {
-	score = y;
-	vspeed = 7;
-	var _left = keyboard_check(ord("A"));
-	var _right = keyboard_check(ord("D"));
-	hspeed = _right*7 - _left*7;
+// else if (room_get_name(room) == "rm_minigame") {
+// 	score = y;
 	
-	if(hspeed<0)
-		image_xscale=-1* abs(image_xscale);
-	else if(hspeed>0)
-		image_xscale=abs(image_xscale);
+// 	vspeed = 7;
+// 	var _left = keyboard_check(ord("A"));
+// 	var _right = keyboard_check(ord("D"));
+// 	hspeed = _right*7 - _left*7;
+	
+// 	if(hspeed<0)
+// 		image_xscale=-1* abs(image_xscale);
+// 	else if(hspeed>0)
+// 		image_xscale=abs(image_xscale);
 
-	x = clamp(x, 32, room_width-32);
-	y = clamp(y, 32, room_height-32);
+// 	x = clamp(x, 32, room_width-32);
+// 	y = clamp(y, 32, room_height-32);
 
-} //Underwater movement 
-else if (room_get_name(room) == "rm_underwater") {
+// } //Underwater movement 
+else if (room = rm_underwater || room = rm_boss) {
 	var _left = keyboard_check(ord("A"));
 	var _right = keyboard_check(ord("D"));
 	var _up = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_space);
@@ -115,17 +132,32 @@ else if (room_get_name(room) == "rm_underwater") {
 	_vspd = lerp(_vspd, 1, _grv);
 
 	//Change sprite based on direction char is facing
+	
+	if(sprite_index != sp_left_ross && sprite_index != sp_right_ross)
+	{
+		sprite_index = sp_left_swim;
+	}
+	
 	if(_left)
-			sprite_index = sp_left_ross;
+			sprite_index = sp_left_swim;
 
 	else if(_right)
-			sprite_index = sp_right_ross;
+			sprite_index = sp_right_swim;
+	
+	if(_hspd != 0)
+		image_index += 12/60;
+	else
+		image_index = 0;
 		
 	//don't let ross leave the room WIP
+	
+	if(x>=room_width-30)
+		room_goto(rm_boss);
 	y=clamp(y,20,room_height-20);
 	x=clamp(x,20,room_width-20);
 
 
 } else {
 visible = false;
+}
 }

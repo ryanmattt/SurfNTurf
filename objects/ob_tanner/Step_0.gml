@@ -1,5 +1,12 @@
-if (_key.visible && (distance_to_object(ob_ross)>=10) || ob_ross.dialogue_open) {
+if(!_interacted) {
+	if (_key.visible && (distance_to_object(ob_ross)>=10) || ob_ross.dialogue_open) {
 	_key.visible = false;
-} else if(!_key.visible && distance_to_object(ob_ross)<10) { 
+	} else if(!_key.visible && distance_to_object(ob_ross)<10) { 
 	_key.visible = true;
+	}
+}
+else {
+sprite_index=sp_tannercycle;
+x+=10;
+instance_destroy(ob_motorcycle);
 }

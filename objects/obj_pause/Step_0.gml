@@ -37,6 +37,7 @@ if ( window != windowPrev ){
 
 ///		Trigger PauseMenu	///
 if ( kPause ){
+	draw_set_font( font );
 	if ( pause ){
 		alarm[0]	= 2; //Resume
 	} else {

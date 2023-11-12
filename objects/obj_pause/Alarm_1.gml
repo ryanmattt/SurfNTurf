@@ -1,6 +1,7 @@
 /// @description Pause
 instance_deactivate_all( true );
 audio_pause_all();
+draw_set_font(font);
 //instance_activate_object( ... ); //Activate persistant objects like Cameras & Controllers!
 
 screen_alpha_set	= 0.8;

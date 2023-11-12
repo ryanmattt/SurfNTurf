@@ -6,6 +6,7 @@ if(_first_run)
 	_first_run=false;
 }
 
+draw_set_font(fnt_dialogue);
 draw_sprite_stretched(_display_sprite,0,x+boxWidth*3/10,y-boxHeight,boxHeight*1.4,boxHeight);
 draw_sprite_stretched(_player.has_necklace ? sp_ross_closup_necklace : sp_ross_closeup ,0 ,0, 360,(boxHeight-yBuffer)*2/3,(boxHeight/1.4)*2/3);
 
