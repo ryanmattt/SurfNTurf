@@ -1,7 +1,11 @@
-// _key=instance_create_layer(x,y-80, "Keys", ob_interact_key);
+ _key=instance_create_layer(x,y-80, "Keys", ob_interact_key);
 _start_dialogue = false;
 _interacted = false;
 _textbox = noone;
+depth=-y;
+
+sd01start = new CreateNode("Hey buddy, how's it going?",,,,"Steve");
+
 
 /*
 
@@ -21,7 +25,7 @@ _textbox = noone;
     b. Of course I will! I'm the greatest surfer that's ever lived.
 */
 
-sd01start = new CreateNode("Happy 18th Birthday son!",,,,"Steve");
+/*sd01start = new CreateNode("Happy 18th Birthday son!",,,,"Steve");
 sd01a_b = new CreateNode(["Thanks dad!", "Come on dad, let me sleep in."],,1);
 sd01start.next=sd01a_b;
 sd01aa = new CreateNode("I have a gift for you.",,,,"Steve",,true);
@@ -44,4 +48,4 @@ sd02aa.next=sd03start;
 sd02baa.next=sd03start;
 sd03a_b = new CreateNode(["UGH! Whatever...", "Of course I will! I'm the greatest surfer that's ever lived."],,1);
 sd03start.next=sd03a_b;
-
+*/

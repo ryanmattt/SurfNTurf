@@ -2,6 +2,8 @@ _key=instance_create_layer(x,y-80, "Keys", ob_interact_key);
 _start_dialogue = false;
 _interacted = false;
 _textbox = noone;
+depth=-y;
+
 /*
 01. Sick necklace bro, where'd you get it?
     a. It was my mom's... she's actually dead and today's a really rough day

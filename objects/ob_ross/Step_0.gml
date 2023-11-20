@@ -1,7 +1,7 @@
 //Surface Movement
 if(!dialogue_open) {
 if(room_get_name(room)=="rm_beach") {
-	
+		depth=-y;
 		var _left = keyboard_check(ord("A"));
 		var _right = keyboard_check(ord("D"));
 		var _up = keyboard_check(ord("W"));
@@ -150,9 +150,14 @@ else if (room = rm_underwater || room = rm_boss) {
 		image_index = 0;
 		
 	//don't let ross leave the room WIP
-	
-	if(x>=room_width-30)
-		room_goto(rm_boss);
+	if(room==rm_underwater)
+		if(x>=room_width-30)
+			room_goto(rm_boss);
+	if(room==rm_boss)
+		if(x<=30)
+			room_goto(rm_underwater);	
+		
+		
 	y=clamp(y,20,room_height-20);
 	x=clamp(x,20,room_width-20);
 
