@@ -94,7 +94,7 @@ cd04baa = new CreateNode("It used to be my mom's.");
 cd04a_b.next = [cd04aa, cd04ba];
 cd04ba.next = cd04baa;
 
-cd05start = new CreateNode("Is her name Ursuline?",,,,"Coral");
+cd05start = new CreateNode("Is her name Ursiline?",,,,"Coral");
 cd04baa.next = cd05start;
 cd04aa.next = cd05start;
 cd05a_b = new CreateNode(["You're so creepy. Why do you know that?", "Yeah. It was. I really miss her."],, 1, [1, 0]);

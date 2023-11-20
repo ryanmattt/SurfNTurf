@@ -46,8 +46,11 @@ function _updateChar () {
     case "Coral":
         _display_sprite = sp_coral_closeup;
         break;
-
 	
+	case "blub":
+		_display_sprite = sp_clamup;
+		break;
+		
 	}
 }
 
@@ -56,13 +59,18 @@ function _cleanup () {
 	if(node.dtype) {
 		_player._ego += node.modify_mood[_optionselected];
 		node.modify_mood[_optionselected]=0;
+		
+		if(node.sound == 1 && _optionselected = 0)
+			audio_play_sound( snd_necklace_crack,20,false);
+		
 		node=node.next[_optionselected];
 	} else
 		node=node.next;
 		
 	if(node.give_necklace) 
 		_player.has_necklace=true;
-		
+	
+	
 	
 	_optionselected = 0;
 	_nodeComplete = false;
@@ -71,7 +79,7 @@ function _cleanup () {
 	if(node.dtype) 
 		textArray=node.text;
 	
-
+	
 
 
 }

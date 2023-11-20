@@ -168,8 +168,33 @@ ud07a_b.next = [ud08start, ud07ba];
 ud07ba.next = ud07baa;
 ud07baa.next = ud08start;
 
-ud08a_b = new CreateNode(["Destroy the necklace.","Use the necklace to destroy your mom."],,1,,,#FF3333);
+ud08a_b = new CreateNode(["Destroy the necklace.","Use the necklace to destroy your mom."],,1,,,#FF3333,,1);
 ud08start.next = ud08a_b;
 
 
 
+/*
+Destroy the Necklace
+Ross: I will not join you, mom. I don’t want anything to do with this. I’m taking this necklace off and leaving.
+Ursiline: No, you will not. I won’t let you.
+Ross: Yes, I will. I wish dad never gave me this necklace. You know what-*screen flash + crash sound effect*
+Ursiline: Ross, what have you done? Do you know how much I’ve given up for that?
+Ross: Yeah, you gave up on me. I’m going home.
+*close ups end and you’re prompted to swim up*
+*Ursiline’s sprite drowns*
+*Happy Birthday Ending*
+Destroy your Mom
+Ross: Mom, you’re crazy. Someone needs to stop you. I need to stop you.
+Ursiline: How are you going to do that?
+Ross: Your powers are in the necklace, right? I can do something with that!
+Ursiline: I’d like to see you try.
+Ross: See, mother, you’re neglecting to acknowledge that I am the dopest surfer on Tenderloin Beach and underestimate my radical abilities. 
+Ursiline: You’re ridiculous and weak, and you don’t have the stomach to destroy your sweet mother. 
+Ross: I’m sick of you, mom! You’re horrible, pathetic, and a true sea bitch. I will never let you rule the ocean again
+Ursiline: Yeah? What are you gonna do?
+Ross: I’m gonna use this necklace. I’ve felt so powerful since I’ve gotten it. I can destroy you. Forever
+Ursiline: Go ahead.
+Ross: I will use the necklace to kill you. RIGHT HERE! RIGHT NOW!
+Ursiline: Oh Ross, you sound just like me…and I like to hear it.
+
+*/

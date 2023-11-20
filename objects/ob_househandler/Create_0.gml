@@ -2,11 +2,11 @@ draw_set_font(fnt_dialogue);
 sd01start = new CreateNode("Happy 18th Birthday son!",,,,"Steve");
 sd01a_b = new CreateNode(["Thanks dad!", "Come on dad, let me sleep in."],,1);
 sd01start.next=sd01a_b;
-sd01aa = new CreateNode("I have a gift for you.",,,,"Steve",,true);
-sd01ba = new CreateNode("Aw, don't be like that. Here, I've got something for you.",,,,"Steve",,true);
+sd01aa = new CreateNode("I have a gift for you.",,,,"Steve");
+sd01ba = new CreateNode("Aw, don't be like that. Here, I've got something for you.",,,,"Steve");
 sd01a_b.next=[sd01aa,sd01ba];
 
-sd02start = new CreateNode("I know this is a bittersweet day for you since your mother isn't here... But here is something to remember her by.",,,,"Steve");
+sd02start = new CreateNode("I know this is a bittersweet day for you since your mother isn't here... But here is something to remember her by.",,,,"Steve",,true);
 sd01aa.next=sd02start;
 sd01ba.next=sd02start;
 sd02a_b = new CreateNode(["Wow dad this is radical, thanks!", "I don't know dad, I'm not sure I want it."],,1);

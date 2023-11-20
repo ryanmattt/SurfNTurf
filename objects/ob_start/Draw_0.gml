@@ -1,7 +1,3 @@
-/// @DnDAction : YoYo Games.Common.Execute_Code
-/// @DnDVersion : 1
-/// @DnDHash : 66309AF8
-/// @DnDArgument : "code" "/// @description Insert description here$(13_10)// You can write your code in this editor$(13_10)$(13_10)draw_set_halign(fa_center);$(13_10)draw_set_color(c_black);$(13_10)$(13_10)$(13_10)draw_set_font(fnt_title);$(13_10)draw_text_transformed(room_width/2, room_height*1/5, "Surf n' Turf", 2, 2, 0);$(13_10)$(13_10)draw_set_font(fnt_dialogue);$(13_10)draw_text_transformed(room_width/2, room_height/2, "Press Enter to Begin", 2, 2, 0);$(13_10)$(13_10)$(13_10)//Play$(13_10)//Settings$(13_10)//Credits$(13_10)//Exit$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)$(13_10)"
 /// @description Insert description here
 // You can write your code in this editor
 
@@ -13,8 +9,14 @@ draw_set_font(fnt_title);
 draw_text_transformed(room_width/2, room_height*1/5, "Surf n' Turf", 2, 2, 0);
 
 draw_set_font(fnt_dialogue);
-draw_text_transformed(room_width/2, room_height/2, "Press Enter to Begin", 2, 2, 0);
+var menu_item;
 
+for (menu_item = 0; menu_item < array_length_1d(start_menu); menu_item += 1)
+{
+	draw_text(room_width/2 + space, room_height/2 + (menu_item * space), string(start_menu[menu_item]))
+}
+
+draw_sprite(sp_selectarrow, 0,room_width/2 - 40, room_height/2 - 16 + (start_menu_pos * space))
 
 //Play
 //Settings
