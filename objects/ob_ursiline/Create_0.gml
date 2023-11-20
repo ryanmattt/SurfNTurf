@@ -58,7 +58,7 @@ _textbox = noone;
     b. Use the necklace to destroy your mom.
 */
 
-ud01start = new CreateNode("It's a family reunion! I haven't seen you in twelve years, Ross. I recognized that necklace immediately",,,,"Ursiline");
+ud01start = new CreateNode("It's a family reunion! I haven't seen you in twelve years, Ross. I recognized that necklace immediately.",,,,"Ursiline");
 ud01a_b = new CreateNode(["Mom! I missed you so much!","How are you alive? I thought you drowned."],,1);
 ud01start.next = ud01a_b;
 
@@ -111,7 +111,7 @@ ud04ba = new CreateNode("Ah! Yes, of course.");
 ud04a_b.next=[ud04aa,ud04ba];
 
 
-ud04aaa = new CreateNode("I want to bond with you mom, and you just don't care about me");
+ud04aaa = new CreateNode("I want to bond with you mom, and you just don't care about me.");
 ud04baa = new CreateNode("I don't think you actually remember that. What was on the little surfboard you bought me?");
 ud04aa.next = ud04aaa;
 ud04ba.next = ud04baa;
@@ -142,7 +142,7 @@ ud06aa = new CreateNode("Ross, stop it with this nonsense.",,,,"Ursiline");
 ud06ba = new CreateNode("We have calendars down here, Ross. Of course, I do.",,,,"Ursiline");
 ud06a_b.next = [ud06aa, ud06ba];
 
-ud06aaa = new CreateNode("NO MOM, YOU STOP! It is my 18th birthday and you FORGOT");
+ud06aaa = new CreateNode("NO MOM, YOU STOP! It is my 18th birthday and you FORGOT.");
 ud06baa = new CreateNode("Then why don't you tell me why I'm down here today of all days?");
 ud06aa.next = ud06aaa;
 ud06ba.next = ud06baa;
@@ -168,31 +168,70 @@ ud07a_b.next = [ud08start, ud07ba];
 ud07ba.next = ud07baa;
 ud07baa.next = ud08start;
 
-ud08a_b = new CreateNode(["Destroy the necklace.","Use the necklace to destroy your mom."],,1,,,#FF3333,,1);
+ud08a_b = new CreateNode(["Destroy the necklace.","Use the necklace to destroy your mom."],,1,,,#FF3333);
 ud08start.next = ud08a_b;
+
+udnecklace1 = new CreateNode("I will not join you, mom. I don't want anything to do with this. I'm taking this necklace off and leaving.")
+uddestroy1 = new CreateNode("Mom, you're crazy. Someone needs to stop you. I need to stop you.")
+ud08a_b.next = [udnecklace1, uddestroy1];
+
+udnecklace2 = new CreateNode("No, you will not. I won't let you.",,,,"Ursiline");
+udnecklace1.next=udnecklace2;
+udnecklace3 = new CreateNode("Yes, I will. I wish dad never gave me this necklace. You know what-",,,,,,,1);
+udnecklace2.next = udnecklace3;
+udnecklace4 = new CreateNode("Ross, what have you done? Do you know how much I've given up for that?",,,,"Ursiline");
+udnecklace3.next = udnecklace4;
+udnecklace5 = new CreateNode("Yeah, you gave up on me. I'm going home.");
+udnecklace4.next = udnecklace5;
+
+uddestroy2 = new CreateNode("Mom, you're crazy. Someone needs to stop you. I need to stop you.");
+uddestroy1.next = uddestroy2;
+uddestroy3 = new CreateNode("How are you going to do that?",,,,"Ursiline");
+uddestroy2.next = uddestroy3;
+uddestroy4 = new CreateNode("Your powers are in the necklace, right? I can do something with that!");
+uddestroy3.next = uddestroy4;
+uddestroy5 = new CreateNode("I'd like to see you try.",,,,"Ursiline");
+uddestroy4.next = uddestroy5;
+uddestroy6 = new CreateNode("See, mother, you're neglecting to acknowledge that I am the dopest surfer on Tenderloin Beach and underestimate my radical abilities.");
+uddestroy5.next = uddestroy6;
+uddestroy7 = new CreateNode("You're ridiculous and weak, and you don't have the stomach to destroy your sweet mother.",,,,"Ursiline");
+uddestroy6.next = uddestroy7;
+uddestroy8 = new CreateNode("I'm sick of you, mom! You're horrible, pathetic, and a true sea bitch. I will never let you rule the ocean again.");
+uddestroy7.next = uddestroy8;
+uddestroy9 = new CreateNode("Yeah? What are you gonna do?",,,,"Ursiline");
+uddestroy8.next = uddestroy9;
+uddestroy10 = new CreateNode("I'm gonna use this necklace. I've felt so powerful since I've gotten it. I can destroy you. Forever.");
+uddestroy9.next = uddestroy10;
+uddestroy11 = new CreateNode("Go ahead.",,,,"Ursiline");
+uddestroy10.next = uddestroy11;
+uddestroy12 = new CreateNode("I will use the necklace to kill you. RIGHT HERE! RIGHT NOW!");
+uddestroy11.next = uddestroy12;
+uddestroy13 = new CreateNode("Oh Ross, you sound just like me…and I like to hear it.");
+uddestroy12.next = uddestroy13;
 
 
 
 /*
 Destroy the Necklace
-Ross: I will not join you, mom. I don’t want anything to do with this. I’m taking this necklace off and leaving.
-Ursiline: No, you will not. I won’t let you.
+Ross: I will not join you, mom. I don't want anything to do with this. I'm taking this necklace off and leaving.
+Ursiline: No, you will not. I won't let you.
 Ross: Yes, I will. I wish dad never gave me this necklace. You know what-*screen flash + crash sound effect*
-Ursiline: Ross, what have you done? Do you know how much I’ve given up for that?
-Ross: Yeah, you gave up on me. I’m going home.
-*close ups end and you’re prompted to swim up*
-*Ursiline’s sprite drowns*
+Ursiline: Ross, what have you done? Do you know how much I've given up for that?
+Ross: Yeah, you gave up on me. I'm going home.
+*close ups end and you're prompted to swim up*
+*Ursiline's sprite drowns*
 *Happy Birthday Ending*
+
 Destroy your Mom
-Ross: Mom, you’re crazy. Someone needs to stop you. I need to stop you.
+Ross: Mom, you're crazy. Someone needs to stop you. I need to stop you.
 Ursiline: How are you going to do that?
 Ross: Your powers are in the necklace, right? I can do something with that!
-Ursiline: I’d like to see you try.
-Ross: See, mother, you’re neglecting to acknowledge that I am the dopest surfer on Tenderloin Beach and underestimate my radical abilities. 
-Ursiline: You’re ridiculous and weak, and you don’t have the stomach to destroy your sweet mother. 
-Ross: I’m sick of you, mom! You’re horrible, pathetic, and a true sea bitch. I will never let you rule the ocean again
+Ursiline: I'd like to see you try.
+Ross: See, mother, you're neglecting to acknowledge that I am the dopest surfer on Tenderloin Beach and underestimate my radical abilities. 
+Ursiline: You're ridiculous and weak, and you don't have the stomach to destroy your sweet mother. 
+Ross: I'm sick of you, mom! You're horrible, pathetic, and a true sea bitch. I will never let you rule the ocean again
 Ursiline: Yeah? What are you gonna do?
-Ross: I’m gonna use this necklace. I’ve felt so powerful since I’ve gotten it. I can destroy you. Forever
+Ross: I'm gonna use this necklace. I've felt so powerful since I've gotten it. I can destroy you. Forever
 Ursiline: Go ahead.
 Ross: I will use the necklace to kill you. RIGHT HERE! RIGHT NOW!
 Ursiline: Oh Ross, you sound just like me…and I like to hear it.

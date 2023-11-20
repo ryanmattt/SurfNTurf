@@ -12,9 +12,9 @@ sd01ba.next=sd02start;
 sd02a_b = new CreateNode(["Wow dad this is radical, thanks!", "I don't know dad, I'm not sure I want it."],,1);
 sd02start.next=sd02a_b;
 sd02aa = new CreateNode("Yeah, of course!",,,,"Steve");
-sd02ba = new CreateNode("Ross, we need to be able to remember her somehow. Please wear it today, for her",,,,"Steve");
+sd02ba = new CreateNode("Ross, we need to be able to remember her somehow. Please wear it today, for her.",,,,"Steve");
 sd02a_b.next=[sd02aa,sd02ba];
-sd02baa = new CreateNode("Ok dad, I will for her");
+sd02baa = new CreateNode("Ok dad, I will for her.");
 sd02ba.next=sd02baa;
 
 sd03start = new CreateNode("Although, I must say... There was always something fishy about her death...anyways, Have a great birthday! But stay safe. The waves are killer out there. You know how I feel about the ocean after your mother.",,,,"Steve");

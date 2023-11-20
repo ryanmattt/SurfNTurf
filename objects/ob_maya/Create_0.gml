@@ -42,7 +42,7 @@ md02aa = new CreateNode("Woah, I've never seen a shell like that before. It's gn
 md02ba = new CreateNode("I've never seen you like this before... Does it have something to do with that new necklace?",,,,"Maya");
 md02a_b.next = [md02aa, md02ba];
 
-md02aaa = new CreateNode("Rad right? It's making me feel really connected to the ocean",,,,"Ross");
+md02aaa = new CreateNode("Rad right? It's making me feel really connected to the ocean.",,,,"Ross");
 md02baa = new CreateNode("Nah, the only thing this necklace is doing is making me the dopest surfer on Tenderloin Beach.",,,,"Ross");
 md02aa.next = md02aaa;
 md02ba.next = md02baa;
@@ -54,6 +54,6 @@ md02baa.next = md03start;
 md03a_b = new CreateNode(["Sucks to suck. Guess you're just afraid to hit these gargantuan waves, dawg.","Yeah, my dad's worried. But he's always been worried since what happened to mom. I'm still amped to hit the waves though!"],,1,[1,0]);
 md03start.next = md03a_b;
 
-md03aa = new CreateNode("Ross you're being like ridiculous. I'm going to like leave right now and let you figure this out, have a good birthday",,,,"Maya");
+md03aa = new CreateNode("Ross you're being like ridiculous. I'm going to like leave right now and let you figure this out, have a good birthday.",,,,"Maya");
 md03ba = new CreateNode("Yeah just be like careful. Ever since this morning, I've heard like really weird noises along the beach, although it could just be my crystal lace agate hiding in my shoe. Have a great day, Ross!!",,,,"Maya");
 md03a_b.next = [md03aa, md03ba];
