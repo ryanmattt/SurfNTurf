@@ -80,7 +80,7 @@ cd02baa.next = cd03start;
 cd03a_b = new CreateNode(["You can't just leave me hanging like that, man.", "Hurry on with it."],, 1, [0, 1]);
 cd03start.next = cd03a_b;
 cd03aa = new CreateNode("There is no way it could be true.",,,,"Coral");
-cd03ba = new CreateNode("You won't even believe me, and I'm not even sure",,,,"Coral");
+cd03ba = new CreateNode("You won't even believe me, and I'm not even sure.",,,,"Coral");
 cd03a_b.next = [cd03aa, cd03ba];
 
 cd04start = new CreateNode("Hold on...where did you get that necklace from?",,,,"Coral");
@@ -112,7 +112,7 @@ cd05aa.next = cd06start;
 cd05baaa.next = cd06start;
 cd06a_b = new CreateNode(["Why do you want me to leave so badly? And what do you know about my mom that you're not telling me?", "I don't need your help. I'm the dopest surfer in Tenderloin Beach. Tell me what you know about my mom."],, 1, [0, 1]);
 cd06start.next = cd06a_b;
-cd06aa = new CreateNode("I can't tell you, you just need to leave...right now",,,,"Coral");
+cd06aa = new CreateNode("I can't tell you, you just need to leave... right now.",,,,"Coral");
 cd06ba = new CreateNode("You really need to leave. Let's go.",,,,"Coral");
 cd06a_b.next = [cd06aa, cd06ba];
 cd06aaa = new CreateNode("Why did you mention the necklace? How is it making me breathe underwater? Do I have gills? Am I a fish? Are you a fish?");
