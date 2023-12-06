@@ -56,8 +56,10 @@ function _updateChar () {
 
 
 function _cleanup () {
+	
+	
 	if(node.dtype) {
-		_player._ego += node.modify_mood[_optionselected];
+		global._ego += node.modify_mood[_optionselected];
 		node.modify_mood[_optionselected]=0;
 		
 		if(node.sound == 1 && _optionselected = 0) {

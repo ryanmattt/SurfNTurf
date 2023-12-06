@@ -1,8 +1,8 @@
 //variables to determine if the player character can do multiple things at once
 riding_surfboard = false;
 dialogue_open = false;
-_ego = 0;
 _highscore=0;
+global._player=self;
 
 //inventory
 if(room!=rm_housedialogue)

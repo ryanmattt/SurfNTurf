@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sp_housedialogue",
-  "bbox_bottom": 565,
+  "name": "sp_goodending",
+  "bbox_bottom": 1079,
   "bbox_left": 0,
-  "bbox_right": 1079,
+  "bbox_right": 1919,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c982b159-fdd9-424c-b510-1fcfb5187d76",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a9516241-49bd-4a5f-aec4-d91cbc9bddbd",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 566,
+  "height": 1080,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a25504e0-fb58-4ad5-82bf-140d7dbb6eee","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a03318e4-d4cb-443e-8d55-fd6daeb606cc","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sp_housedialogue",
+    "name": "sp_goodending",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c982b159-fdd9-424c-b510-1fcfb5187d76","path":"sprites/sp_housedialogue/sp_housedialogue.yy",},},},"Disabled":false,"id":"765ed0c2-2807-4a3a-a38d-a1f7e69d55cd","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a9516241-49bd-4a5f-aec4-d91cbc9bddbd","path":"sprites/sp_goodending/sp_goodending.yy",},},},"Disabled":false,"id":"abfdc431-7efe-42d3-a248-84ac1d0dfefb","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1080,
+  "width": 1920,
 }

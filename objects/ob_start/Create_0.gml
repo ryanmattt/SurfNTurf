@@ -1,4 +1,7 @@
 global._highscore=0;
+global._vol=1;
+global._ego=0;
+window_set_fullscreen(true);
 
 audio_play_sound(snd_main2,10,false);
 

@@ -1,0 +1,15 @@
+draw_set_font(fnt_dialogue);
+text = "...";
+xBuffer = 10;
+yBuffer = 10;
+boxHeight = camera_get_view_height(view_camera[0]/4);
+boxWidth = camera_get_view_width(view_camera[0]);
+stringHeight = string_height(text);
+charCount = 0;
+name = "";
+_nodeComplete = false;
+node = noone;
+_player = instance_find(ob_ross,0);
+textPart = ".";
+_first_run=true;
+_choiceDistance = stringHeight*2;
