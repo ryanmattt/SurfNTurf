@@ -55,9 +55,10 @@ if(room_get_name(room)=="rm_beach") {
 			
 		}
 		else {
+			x=clamp(x,0,room_width);
 				//detecting when the player crosses the beach 
 			//and turns them back to ross then replaces the surfboard
-			if(y<=590)
+			if(y<=590 && (x<= _dock.x || x>= _dock.x+_dock.sprite_width))
 			{
 				riding_surfboard= false;
 				sprite_index=sp_back_ross;
@@ -71,6 +72,20 @@ if(room_get_name(room)=="rm_beach") {
 				_spd = 4;
 				y=clamp(y,570,room_height);
 	
+			}
+			else if(x>= _dock.x && x<= _dock.x+_dock.sprite_width && y>570+_dock.sprite_height-60)
+			{
+				riding_surfboard= false;
+				sprite_index=sp_back_ross;
+				_surfboard.x = x;
+				_surfboard.y = y+40;
+				_surfboard._key.x = x;
+				_surfboard._key.y = _surfboard.y-100;
+				_surfboard.sprite_index=sp_surfboard;
+				_surfboard.visible = true;
+				y = y-20;
+				_spd = 4;
+				y=clamp(y,570,room_height);
 			}
 				//Swaps to the minigame and sets values
 			else if(y>room_height-10) {

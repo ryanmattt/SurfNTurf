@@ -36,7 +36,7 @@ if (keyboard_check_pressed(vk_space) ||keyboard_check_pressed(vk_enter)) {
            _player.dialogue_open = false;
 		   instance_destroy();
 		   if(room==rm_boss)
-			layer_background_change(layer_background_get_id(layer_get_id("Background")), sp_red_underwater);
+			room_goto(rm_finalchoice);
 		   if(room==rm_housedialogue)
 			room_goto(rm_beach);	
 		   else

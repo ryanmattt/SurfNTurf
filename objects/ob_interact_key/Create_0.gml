@@ -1,6 +1,5 @@
 
 //initializing values for the key bounce
-
 anchorY = 100;
 initial_y = y-anchorY;
 frequency = 0.1;

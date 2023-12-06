@@ -10,10 +10,10 @@ _player = instance_find(ob_ross,0);
 
 
 function create_tanner_dialogue(_self) {
-var _textbox = instance_create_layer(0,camera_get_view_height(view_camera[0])*2/3,"Text",ob_textbox);
-_textbox.name = "Tanner";
-_textbox.currNode = _self.td01start;
-return _textbox;
+	var _textbox = instance_create_layer(0,camera_get_view_height(view_camera[0])*2/3,"Text",ob_textbox);
+	_textbox.name = "Tanner";
+	_textbox.currNode = _self.td01start;
+	return _textbox;
 
 }
 
