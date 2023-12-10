@@ -27,5 +27,5 @@ else if(_right)
 		sprite_index = sp_right_ross;
 		
 //don't let ross leave the room WIP
-y=clamp(y,20,room_height-20);
-x=clamp(x,20,room_width-20);
+y=clamp(y,20,global._wHeight-20);
+x=clamp(x,20,global._wWidth-20);

@@ -21,3 +21,6 @@ _waterfric = .1;
 _surfboard = instance_find(ob_surfboard,0);
 _dock = instance_find(ob_dock,0);
 
+//ending
+_escape = false;
+

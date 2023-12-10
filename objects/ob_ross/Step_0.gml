@@ -105,25 +105,28 @@ if(room_get_name(room)=="rm_beach") {
  			image_xscale=abs(image_xscale);
 		}
 	 
-} //Minigame movement 
-// else if (room_get_name(room) == "rm_minigame") {
-// 	score = y;
-	
-// 	vspeed = 7;
-// 	var _left = keyboard_check(ord("A"));
-// 	var _right = keyboard_check(ord("D"));
-// 	hspeed = _right*7 - _left*7;
-	
-// 	if(hspeed<0)
-// 		image_xscale=-1* abs(image_xscale);
-// 	else if(hspeed>0)
-// 		image_xscale=abs(image_xscale);
-
-// 	x = clamp(x, 32, room_width-32);
-// 	y = clamp(y, 32, room_height-32);
-
-// } //Underwater movement 
+}  
 else if (room = rm_underwater || room = rm_boss) {
+	
+	if(y<40 && _escape)
+		room_goto(rm_goodending);
+			
+	
+	if(global._ending>0)
+	{
+		switch global._ending {
+			case 1:
+				instance_create_layer(0,global._wHeight*3/4,"Text",ob_goodending);
+				_escape = true;
+				break;
+			case 2:
+				instance_create_layer(0,global._wHeight*3/4,"Text",ob_badending);
+				break;
+		}
+		dialogue_open = true;
+		global._ending = 0;
+	}
+	
 	var _left = keyboard_check(ord("A"));
 	var _right = keyboard_check(ord("D"));
 	var _up = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_space);
@@ -176,7 +179,7 @@ else if (room = rm_underwater || room = rm_boss) {
 	y=clamp(y,20,room_height-20);
 	x=clamp(x,20,room_width-20);
 
-
+	
 } else {
 visible = false;
 }
