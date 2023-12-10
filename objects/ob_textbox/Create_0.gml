@@ -62,10 +62,7 @@ function _cleanup () {
 		global._ego += node.modify_mood[_optionselected];
 		node.modify_mood[_optionselected]=0;
 		
-		if(node.sound == 1 && _optionselected = 0) {
-			audio_play_sound( snd_necklace_crack,20,false);
-			alarm[0] = 60;
-		}
+		
 		
 		node=node.next[_optionselected];
 	} else

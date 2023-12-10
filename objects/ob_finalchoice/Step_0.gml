@@ -17,12 +17,13 @@ if (keyboard_check_released(vk_enter)) {
 	
 		switch menu_pos {
 			case 0:
-				room_goto(rm_goodending);
+				global._ending=1;
 				break;
 			case 1:
-				room_goto(rm_badending);
+				global._ending=2;
 				break;
 		}
+		room_goto(rm_boss);
 	
 	
 }
