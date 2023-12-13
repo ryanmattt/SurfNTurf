@@ -8,9 +8,9 @@ x = clamp(x, 32, global._wWidth-32);
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 6080BFB1
-/// @DnDArgument : "expr" "clamp(y, 32, global._wHeight-32)"
+/// @DnDArgument : "expr" "clamp(y, 32, room_height-32)"
 /// @DnDArgument : "var" "y"
-y = clamp(y, 32, global._wHeight-32);
+y = clamp(y, 32, room_height-32);
 
 /// @DnDAction : YoYo Games.Movement.Set_Speed
 /// @DnDVersion : 1

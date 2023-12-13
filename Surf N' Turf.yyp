@@ -16,6 +16,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"end_handlers","folderPath":"folders/Objects/end_handlers.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"handlers","folderPath":"folders/Objects/handlers.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"npcs","folderPath":"folders/Objects/npcs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"objects","folderPath":"folders/Objects/objects.yy",},
@@ -35,7 +36,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"ross","folderPath":"folders/Sprites/ross.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"end_handlers","folderPath":"folders/Objects/end_handlers.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Pixellari.ttf","CopyToMask":-1,"filePath":"datafiles",},
@@ -138,6 +138,7 @@
     {"id":{"name":"sp_ross_closeup","path":"sprites/sp_ross_closeup/sp_ross_closeup.yy",},},
     {"id":{"name":"sp_mayasurf","path":"sprites/sp_mayasurf/sp_mayasurf.yy",},},
     {"id":{"name":"snd_sand_footsteps","path":"sounds/snd_sand_footsteps/snd_sand_footsteps.yy",},},
+    {"id":{"name":"fnt_dialoguelarge","path":"fonts/fnt_dialoguelarge/fnt_dialoguelarge.yy",},},
     {"id":{"name":"Approach","path":"scripts/Approach/Approach.yy",},},
     {"id":{"name":"ob_underwaterross","path":"objects/ob_underwaterross/ob_underwaterross.yy",},},
     {"id":{"name":"rm_minigame","path":"rooms/rm_minigame/rm_minigame.yy",},},

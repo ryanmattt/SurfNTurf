@@ -13,7 +13,7 @@ if(global._ego>10 && global._ego<17) {
 			menu_pos = 0; }
 	}
 }
-if (keyboard_check_released(vk_enter)) {
+if (choice_enabled && keyboard_check_pressed(vk_enter)) {
 	
 		switch menu_pos {
 			case 0:
