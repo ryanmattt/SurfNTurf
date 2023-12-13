@@ -42,6 +42,6 @@ text[7] = "Yeah? What are you gonna do?";
 text[8] = "I'm gonna use this necklace. I've felt so powerful since I've gotten it. I can destroy you. Forever.";
 text[9] = "Go ahead.";
 text[10] = "I will use the necklace to kill you. RIGHT HERE! RIGHT NOW!";
-text[11] = "Oh Ross, you sound just like me…and I like to hear it.";
+text[11] = "Oh Ross, you sound just like me... and I like to hear it.";
 
 

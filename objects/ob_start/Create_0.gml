@@ -19,7 +19,7 @@ start_menu[3] = "Quit";
 space = 100;
 start_menu_pos = 0;
 
-roles = ["Producer", "Artists"," "," ","Sound Designers"," ","Level Designer","Lead Programmer","Programmer","Writers"," "," ","Special Thanks"];
+roles = ["Producer", "Artists"," "," ","Sound Design","Soundtrack","Level Designer","Lead Programmer","Programmer","Writers"," "," ","Special Thanks"];
 names = ["Eliza Bennet", "Eliza Bennet","Sunahra Tanvir", "Ouriya Boshi Levine", "Claire Syverson","Ouriya Boshi Levine","Claire Syverson","Ryan Rosenblatt","Claire Syverson","Sunahra Tanvir","Eliza Bennet"," ","Professor Joseph Lopocaro"]
 
 _draw_credits_left = function(_element, _index) {

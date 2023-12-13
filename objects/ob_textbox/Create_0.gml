@@ -61,8 +61,7 @@ function _cleanup () {
 	if(node.dtype) {
 		global._ego += node.modify_mood[_optionselected];
 		node.modify_mood[_optionselected]=0;
-		
-		
+		audio_play_sound(click(),5,false, 5);
 		
 		node=node.next[_optionselected];
 	} else
