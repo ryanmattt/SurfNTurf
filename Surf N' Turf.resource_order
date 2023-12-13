@@ -5,6 +5,7 @@
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
+    {"name":"end_handlers","order":21,"path":"folders/Objects/end_handlers.yy",},
     {"name":"handlers","order":12,"path":"folders/Objects/handlers.yy",},
     {"name":"npcs","order":8,"path":"folders/Objects/npcs.yy",},
     {"name":"objects","order":19,"path":"folders/Objects/objects.yy",},
@@ -24,7 +25,6 @@
     {"name":"ross","order":5,"path":"folders/Sprites/ross.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"end_handlers","order":21,"path":"folders/Objects/end_handlers.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"ob_up_arrow","order":6,"path":"objects/ob_up_arrow/ob_up_arrow.yy",},
@@ -109,6 +109,7 @@
     {"name":"sp_ross_closeup","order":2,"path":"sprites/sp_ross_closeup/sp_ross_closeup.yy",},
     {"name":"sp_mayasurf","order":12,"path":"sprites/sp_mayasurf/sp_mayasurf.yy",},
     {"name":"snd_sand_footsteps","order":4,"path":"sounds/snd_sand_footsteps/snd_sand_footsteps.yy",},
+    {"name":"fnt_dialoguelarge","order":3,"path":"fonts/fnt_dialoguelarge/fnt_dialoguelarge.yy",},
     {"name":"Approach","order":2,"path":"scripts/Approach/Approach.yy",},
     {"name":"ob_underwaterross","order":6,"path":"objects/ob_underwaterross/ob_underwaterross.yy",},
     {"name":"rm_minigame","order":3,"path":"rooms/rm_minigame/rm_minigame.yy",},

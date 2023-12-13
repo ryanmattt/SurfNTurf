@@ -73,7 +73,7 @@ if(room_get_name(room)=="rm_beach") {
 				y=clamp(y,570,room_height);
 	
 			}
-			else if(x>= _dock.x && x<= _dock.x+_dock.sprite_width && y>570+_dock.sprite_height-60)
+			/*else if(x>= _dock.x && x<= _dock.x+_dock.sprite_width && y>570+_dock.sprite_height-60)
 			{
 				riding_surfboard= false;
 				sprite_index=sp_back_ross;
@@ -86,7 +86,7 @@ if(room_get_name(room)=="rm_beach") {
 				y = y-20;
 				_spd = 4;
 				y=clamp(y,570,room_height);
-			}
+			}*/
 				//Swaps to the minigame and sets values
 			else if(y>room_height-10) {
 				image_xscale=5;

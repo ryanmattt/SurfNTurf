@@ -35,7 +35,7 @@ md02start = new CreateNode("But how are you like doing though? It's gotta be lik
 md01aa.next = md02start;
 md01ba.next = md02start;
 
-md02a_b = new CreateNode(["I'm ok, my dad gave me my mom's old necklace as a birthday gift…I've felt weird since wearing it.","I'm fine, bruh. Don't be so pushy."],,1,[0,1]);
+md02a_b = new CreateNode(["I'm ok, my dad gave me my mom's old necklace as a birthday gift... I've felt weird since wearing it.","I'm fine, bruh. Don't be so pushy."],,1,[0,1]);
 md02start.next = md02a_b;
 
 md02aa = new CreateNode("Woah, I've never seen a shell like that before. It's gnarly.",,,,"Maya");

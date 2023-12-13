@@ -63,7 +63,7 @@ cd01a_b.next = [cd01aa, cd01ba];
 cd02start = new CreateNode("Now how did you get down here? And how are you still alive?",,,,"Coral");
 cd01ba.next = cd02start;
 cd01aa.next = cd02start;
-cd02a_b = new CreateNode(["One minute, I was shredding these gargantuan waves off of Tenderloin Beach. My hair was flowing and the waves were going WHAPOHOW. Next minute, I ran into a gnarly wall of rocks, thought I drowned, and then found you.", "I don't know! I don't want to be here! And I just want to go home!"],,1);
+cd02a_b = new CreateNode(["I was shredding gargantuan waves off of Tenderloin Beach and the waves were going WHAPOHOW. Then boom, I ran into a gnarly wall of rocks, thought I drowned, and then found you.", "I don't know! I don't want to be here! And I just want to go home!"],,1);
 cd02start.next = cd02a_b;
 cd02aa = new CreateNode("Wow! I've never seen a human so close before!",,,,"Coral");
 cd02ba = new CreateNode("You should try to calm down.",,,,"Coral");
@@ -126,7 +126,7 @@ cd06aaa.next = cd07start;
 cd07a_b = new CreateNode(["What do you mean?", "Why would the whole ocean know my mom?"],, 1, [0, 1]);
 cd07start.next = cd07a_b;
 
-cd08start = new CreateNode("Your mother, Ursuline, rules the seas. She just showed up twelve years ago and took control. We tried to put up a fight but it was useless. She was just so powerful. My parents perished in the Battle of Loin Reef in the Great War of The Sirloin Sea.",,,,"Coral");
+cd08start = new CreateNode("Your mother, Ursiline, rules the seas. She just showed up twelve years ago and took control. We tried to put up a fight but it was useless. She was just so powerful. My parents perished in the Battle of Loin Reef in the Great War of The Sirloin Sea.",,,,"Coral");
 cd07a_b.next = [cd08start, cd08start];
 cd08a_b = new CreateNode(["So you're saying my mother is a sea witch who has killed people and now rules these gnarly waves?", "I don't believe you. My mom was a dope lady. She would never."],, 1);
 cd08start.next = cd08a_b;
