@@ -23,7 +23,7 @@ if (choice_enabled && keyboard_check_pressed(vk_enter)) {
 				global._ending=2;
 				break;
 		}
-		room_goto(rm_boss);
+		room_goto(rm_underwater);
 	
 	
 }

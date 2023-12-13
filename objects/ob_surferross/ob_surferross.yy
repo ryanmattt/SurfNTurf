@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sp_surfross",
-    "path": "sprites/sp_surfross/sp_surfross.yy",
+    "name": "sp_surf_front_right",
+    "path": "sprites/sp_surf_front_right/sp_surf_front_right.yy",
   },
   "spriteMaskId": null,
   "visible": true,

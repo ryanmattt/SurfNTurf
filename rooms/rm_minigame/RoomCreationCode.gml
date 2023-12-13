@@ -1,0 +1,1 @@
+audio_play_sound(snd_waves,5,false,-10);

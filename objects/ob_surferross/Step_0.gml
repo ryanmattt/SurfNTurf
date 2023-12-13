@@ -18,3 +18,12 @@ y = clamp(y, 32, room_height-32);
 /// @DnDArgument : "speed" "7"
 /// @DnDArgument : "type" "2"
 vspeed = 7;
+
+/// @DnDAction : YoYo Games.Instances.Set_Sprite
+/// @DnDVersion : 1
+/// @DnDHash : 7F5C2129
+/// @DnDArgument : "imageind" ".12"
+/// @DnDArgument : "imageind_relative" "1"
+/// @DnDArgument : "spriteind" "sprite_index"
+sprite_index = sprite_index;
+image_index += .12;

@@ -5,7 +5,7 @@ if(!_interacted) {
 	_key.visible = true;
 	}
 }
-else {
+else if(_zoom) {
 sprite_index=sp_tannercycle;
 x+=10;
 instance_destroy(ob_motorcycle);

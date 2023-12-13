@@ -38,10 +38,20 @@ if(room_get_name(room)=="rm_beach") {
 			else if(_down)
 				sprite_index = sp_forward_ross;
 
-			if(_hspd != 0 || _vspd != 0)
+			if(_hspd != 0 || _vspd != 0) {
 				image_index += .12;
-			else
+				if(!audio_is_playing(snd_sand_footsteps)) {
+					audio_play_sound(snd_sand_footsteps,10,true,5,0);
+					 }
+			}
+			else {
 				image_index = 0;
+				if(alarm_get(0)==-1){
+					alarm[0]=20;
+				}
+				
+				
+			}
 
 	
 		//code to stop ross from going into the water and leaving the beach
@@ -55,10 +65,33 @@ if(room_get_name(room)=="rm_beach") {
 			
 		}
 		else {
+			if(audio_is_playing(snd_sand_footsteps)) {
+					audio_stop_sound(snd_sand_footsteps);
+			}
 			x=clamp(x,0,room_width);
+			
+			if(_hspd != 0 || _vspd != 0) {
+				currSprite = "sp_surf_" + last_UD + last_LR;
+				image_index += .12;
+				if(_vspd != 0)
+					if(_vspd < 0)
+						last_UD = "back_";
+					else
+						last_UD = "front_";
+
+				if(_hspd != 0)
+					if(_hspd < 0)
+						last_LR = "left";
+					else
+						last_LR = "right";
+
+				sprite_index = asset_get_index(currSprite);
+			}
+			
+
 				//detecting when the player crosses the beach 
 			//and turns them back to ross then replaces the surfboard
-			if(y<=590 && (x<= _dock.x || x>= _dock.x+_dock.sprite_width))
+			if(y<=590 && (x <= _dock.x || x >= _dock.x+_dock.sprite_width))
 			{
 				riding_surfboard= false;
 				sprite_index=sp_back_ross;
@@ -99,10 +132,6 @@ if(room_get_name(room)=="rm_beach") {
 			
 			}
 		
-		if(_hspd<0)
- 			image_xscale=-1* abs(image_xscale);
- 		else if(_spd>0)
- 			image_xscale=abs(image_xscale);
 		}
 	 
 }  
@@ -165,15 +194,7 @@ else if (room = rm_underwater || room = rm_boss) {
 	if(_hspd != 0)
 		image_index += 12/60;
 	else
-		image_index = 0;
-		
-	//don't let ross leave the room WIP
-	if(room==rm_underwater)
-		if(x>=room_width-30)
-			room_goto(rm_boss);
-	if(room==rm_boss)
-		if(x<=30)
-			room_goto(rm_underwater);	
+		image_index = 0;	
 		
 		
 	y=clamp(y,20,room_height-20);

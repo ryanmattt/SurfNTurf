@@ -10,8 +10,8 @@ if keyboard_check_pressed(vk_space) {
         _pageComplete = false;
         charCount = 0;
     } else {
-        instance_destroy();
 		room_goto(rm_badending);
 		global._player.dialogue_open=false;
+        instance_destroy();
         }
 }

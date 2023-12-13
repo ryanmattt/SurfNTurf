@@ -16,19 +16,23 @@ if(currentPage==0) {
 		
 		switch start_menu_pos{
 			case 0:
-				room_goto(rm_housedialogue);
 				audio_stop_all();
+				audio_play_sound(snd_gamestart,5,false);
+				room_goto(rm_housedialogue);
 				break;
 				
 			case 1:
+				audio_play_sound(click(),5,false);
 				currentPage=1;
 				break;
 				
 			case 2:
+				audio_play_sound(click(),5,false);
 				currentPage=2;
 				break;
 				
 			case 3:
+				audio_play_sound(click(),5,false);
 				game_end();
 				
 			

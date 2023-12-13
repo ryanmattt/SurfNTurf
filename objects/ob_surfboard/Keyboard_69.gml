@@ -4,6 +4,6 @@ if(_key.visible) {
 	_player.y = y + 20;
 	visible = false;
 	_key.visible = false;
-	_player.sprite_index=sp_surfross;
+	_player.sprite_index=sp_surf_front_left;
 	_player._spd=8;
 }

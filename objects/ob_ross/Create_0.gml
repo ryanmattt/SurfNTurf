@@ -20,7 +20,11 @@ _waterfric = .1;
 //surfboard
 _surfboard = instance_find(ob_surfboard,0);
 _dock = instance_find(ob_dock,0);
+currSprite = sp_surf_back_left;
+last_LR = "left";
+last_UD = "front_";
 
 //ending
 _escape = false;
+
 

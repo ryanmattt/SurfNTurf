@@ -4,4 +4,5 @@ _interacted = false;
 _textbox = noone;
 depth=-y;
 
+image_index = floor(random_range(0,16));
 clamstart= new CreateNode("Blub...",,,,"blub",#4F7CAC);
