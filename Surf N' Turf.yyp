@@ -163,8 +163,8 @@
     {"id":{"name":"rm_beach","path":"rooms/rm_beach/rm_beach.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"rm_underwater","path":"rooms/rm_underwater/rm_underwater.yy",},},
     {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
+    {"roomId":{"name":"rm_underwater","path":"rooms/rm_underwater/rm_underwater.yy",},},
     {"roomId":{"name":"rm_boss","path":"rooms/rm_boss/rm_boss.yy",},},
     {"roomId":{"name":"rm_goodending","path":"rooms/rm_goodending/rm_goodending.yy",},},
     {"roomId":{"name":"rm_housedialogue","path":"rooms/rm_housedialogue/rm_housedialogue.yy",},},

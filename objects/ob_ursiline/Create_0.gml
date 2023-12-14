@@ -3,8 +3,17 @@ _start_dialogue = false;
 _interacted = false;
 _textbox = noone;
 _zoom = true;
+_zoom2 = false;
+
+frequency = 0.1;
+amplitude = 20;
+timer = 0;
+
+
+
 image_xscale = 5;
 image_yscale = 5;
+initial_x = room_width/2;
 
 
 
