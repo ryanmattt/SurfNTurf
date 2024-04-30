@@ -1,12 +1,12 @@
 # SurfNTurf
 ## Project Description
-This project was done in a team of 5 under the supervision of Professor Joseph Lopocaro. 
+This project was done in a group of 5 under the supervision of Professor Joseph Lopocaro. 
 
-Eliza Bennet: Producer, Background Art, Sprite Art, Writer
-Ryan Rosenblatt (me): Lead Programmer
-Claire Syverson: Programming, Sound Designer, Level Designer, Writer
-Boshi Levine: Animations, Soundtrack
-Sunahra Tanvir: Character Art, Endscreens, Writer
+Eliza Bennet: Producer, Background Art, Sprite Art, Writer <br />
+Ryan Rosenblatt (me): Lead Programmer <br />
+Claire Syverson: Programming, Sound Designer, Level Designer, Writer <br />
+Boshi Levine: Animations, Soundtrack <br />
+Sunahra Tanvir: Character Art, Endscreens, Writer <br />
 
 Also a thanks to [jasontomlee](https://marketplace.gamemaker.io/publishers/2332/jasontomlee) for the [Pause Menu - Basic asset](https://marketplace.gamemaker.io/assets/7514/asset-pause-menu-basic) from the Game Maker Store!
 
