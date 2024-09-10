@@ -138,6 +138,7 @@ if(room_get_name(room)=="rm_beach") {
 else if (room = rm_underwater || room = rm_boss) {
 	
 	if(y<40 && _escape)
+
 		room_goto(rm_goodending);
 			
 	
