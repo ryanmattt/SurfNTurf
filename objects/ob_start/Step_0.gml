@@ -1,3 +1,5 @@
+
+
 if(currentPage==0) {
 	var cursor = 0;
 
